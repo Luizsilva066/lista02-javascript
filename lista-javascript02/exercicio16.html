@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 16</title>
+</head>
+
+<body>
+    <script>
+        let qtd = Number(prompt("Quantidade de maçãs:"));
+        let precoMaca = qtd >= 12 ? 0.40 : 0.50;
+
+        alert("Total: R$ " + (qtd * precoMaca).toFixed(2)); let nomeProduto = prompt("Digite o nome do Produto que gostaria de comprar")
+        let preco = parseFloat(prompt("Digite o valor do Produto"))
+        let desconto = preco * 0.10
+        let precocomDesconto = preco - desconto
+
+        alert(`${nomeProduto} está com 10% de desconto saindo por ${precocomDesconto}`)
+    </script>
+</body>
+
+</html>

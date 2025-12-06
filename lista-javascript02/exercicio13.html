@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 13</title>
+</head>
+
+<body>
+    <script>
+        let idadeA = Number(prompt("Digite a idade:"));
+        let sexo = prompt("Digite o sexo (M ou F):").toUpperCase();
+
+        if (sexo === "M" && idadeA >= 65) alert("Pode se aposentar");
+        else if (sexo === "F" && idadeA >= 60) alert("Pode se aposentar");
+        else alert("Não pode se aposentar");
+
+    </script>
+</body>
+
+</html>

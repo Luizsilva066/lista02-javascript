@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 12</title>
+</head>
+<body>
+    <script>
+        const tabelaPrecos = {
+    1:  5.00,   // Produto 1: R$ 5,00
+    2: 3.50,   // Produto 2: R$ 3,50
+    3: 4.75,   // Produto 3: R$ 4,75
+    4: 10.00,  // Produto 4: R$ 10,00
+    5: 7.20    // Produto 5: R$ 7,20
+};
+
+let codigo = prompt("Digite um código de (1 a 5)")
+if(tabelaPrecos <1){
+    alert("Numero invalido")
+}else if (tabelaPrecos >5){
+    alert("Numero  invalido digite apenas de 1 a 5")
+}
+let quantidade = parseInt(prompt("Digite a quantidade comprada"))
+const precoUnitario = tabelaPrecos [codigo];
+const total = precoUnitario * quantidade;
+
+alert(`Produto ${codigo} - Preço unitário: R$ ${precoUnitario.toFixed(2)}\n` +
+          `Quantidade: ${quantidade}\n` +
+          `Total a pagar: R$ ${total.toFixed(2)}`);
+
+
+
+    </script>
+</body>
+</html>
